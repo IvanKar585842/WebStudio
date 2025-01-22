@@ -7,6 +7,9 @@
   --dark-bg-color: #2F303A;
   --secondary-text-color: #FFFFFF;
 }
-h3{
-  color: aqua;
+body{
+  font-family:var(--font-family)
+}
+.logo{
+  font-family:var(--second-family) ;
 }
