@@ -124,7 +124,6 @@ text-align: center;
 .button{
   display: flex;
   justify-content: center;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 background:var(--hover-color);
 color: var(--secondary-text-color);
   border-radius: 4px;
@@ -136,6 +135,7 @@ line-height: 187%;
 letter-spacing: 0.06em;
 text-align: center;
 margin-top: 30px;
+border: none;
 }
 .section2-container{
   padding-top: 94px;
