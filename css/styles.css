@@ -224,8 +224,6 @@ letter-spacing: 0.03em;
   padding-bottom: 94px;
 }
 .section3-title{
-  width: 366px;
-  height: 42px;
 font-weight: 700;
 font-size: 36px;
 letter-spacing: 0.03em;
@@ -263,8 +261,6 @@ color: var(--main-title-color);
   background-color: var(--light-bg-color);
 }
 .section4-title{
-  width: 264px;
-  height: 42px;
 font-weight: 700;
 font-size: 36px;
 letter-spacing: 0.03em;
@@ -398,9 +394,7 @@ font-size: 26px;
 letter-spacing: 0.03em;
 width: 145px;
 height: 31px;
-}
-.footer1-menu-list{
-  row-gap: 9px;
+margin-bottom: 20px;
 }
 .footer1-item{
 font-weight: 400;
@@ -408,6 +402,7 @@ font-size: 14px;
 line-height: 171%;
 letter-spacing: 0.03em;
 color:var(--secondary-text-color);
+margin-bottom: 9px;
 }
 .footer1-mail{
 font-weight: 400;
@@ -415,6 +410,7 @@ font-size: 14px;
 line-height: 171%;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
+margin-bottom: 9px;
 }
 .footer1-tel{
 font-weight: 400;
