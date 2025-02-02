@@ -33,10 +33,10 @@ margin-right: 94px;
 }
 .header1{
    border: 1px solid #ececec;
+     padding-top: 24px;
+  padding-bottom: 25px;
 }
 .header-container{
-  padding-top: 24px;
-  padding-bottom: 25px;
   display: flex;
 
 }
