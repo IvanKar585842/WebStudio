@@ -31,12 +31,14 @@ margin-right: 94px;
   padding-left: 15px;
   padding-right: 15px;
 }
+.header1{
+   border: 1px solid #ececec;
+}
 .header-container{
   padding-top: 24px;
   padding-bottom: 25px;
   display: flex;
-  flex-direction: row;
-  border: 1px solid #ececec;
+
 }
 .nav1-menu-list{
   display: flex;
