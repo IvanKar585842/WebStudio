@@ -107,6 +107,7 @@ text-align: center;
 margin-top: 30px;
 border: none;
 padding-top: 10px;
+border-radius: 5px;
 }
 .section2-container{
   padding-top: 94px;
@@ -290,6 +291,7 @@ text-align: center;
 width: 73px;
 height: 38px;
 border: none;
+border-radius: 5px;
 }
 .menu-button2{
 font-weight: 500;
@@ -300,6 +302,7 @@ text-align: center;
 width: 125px;
 height: 38px;
 border: none;
+border-radius: 5px;
 }
 .menu-button3{
 font-weight: 500;
@@ -310,6 +313,7 @@ text-align: center;
 width: 112px;
 height: 38px;
 border: none;
+border-radius: 5px;
 }
 .menu-button4{
 font-weight: 500;
@@ -320,6 +324,7 @@ text-align: center;
 width: 103px;
 height: 38px;
 border: none;
+border-radius: 5px;
 }
 .menu-button5{
 font-weight: 500;
@@ -330,6 +335,7 @@ text-align: center;
 width: 130px;
 height: 38px;
 border: none;
+border-radius: 5px;
 }
 .menu-list2{
   display: flex;
