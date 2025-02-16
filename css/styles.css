@@ -147,9 +147,7 @@ height: 74px;
   width: 270px;
 height: 98px;
 }
-.section3-container{
-  display: flex;
-  flex-direction: column;
+.section3{
   align-items: center;
   padding-bottom: 94px;
 }
@@ -170,11 +168,9 @@ color: var(--main-title-color);
   height: 294px;;
   background: url("path_to_image");
 }
-.section4-container{
+.section4{
   padding-top: 94px;
   padding-bottom: 94px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 .section4{
@@ -365,6 +361,7 @@ border-radius: 4px;
   width: 370px;
 height: 404px;
 border: 1px solid #eee;
+  flex-basis: calc((100% - 2 * 30px) /3);
 }
  .menu1-img{
   width: 370px;
