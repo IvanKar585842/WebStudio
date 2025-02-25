@@ -224,7 +224,8 @@ color: var(--main-title-color);
   width: 270px;
 height: 368px;
 background-color: white;
-
+box-shadow: 0px 1px 1px rgb(72, 72, 72);
+border-radius: 2px;
 }
 .section4-menu-img{
   width: 270px;
@@ -394,6 +395,8 @@ border-radius: 4px;
 height: 404px;
 border: 1px solid #eee;
   flex-basis: calc((100% - 2 * 30px) /3);
+  box-shadow: 0px 2px 2px rgb(111, 111, 111);
+  border-radius: 4px;
 }
  .menu1-img{
   width: 370px;
