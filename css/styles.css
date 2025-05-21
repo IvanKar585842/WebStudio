@@ -54,6 +54,16 @@ body {
   letter-spacing: 0.02em;
   margin-top: 7px;
   margin-bottom: 8px;
+  position: relative;
+}
+.nav1-menu-link:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  position: absolute;
+  top: 49px;
 }
 a {
   color: black;
@@ -248,6 +258,7 @@ a:hover {
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
   padding-top: 27px;
+  z-index: 2;
 }
 .section4 {
   padding-top: 94px;
@@ -578,7 +589,6 @@ button:hover {
   border: 1px solid #eee;
   flex-basis: calc((100% - 2 * 30px) / 3);
   box-shadow: 0px 2px 2px rgb(111, 111, 111);
-  border-radius: 4px;
 }
 .menu1-img {
   width: 370px;
@@ -614,6 +624,30 @@ button:hover {
   fill: #ffffff;
   background-color: #2196f3;
 }
+.overlay {
+  position: relative;
+  overflow: hidden;
+}
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2195f3c3;
+  transform: translateY(101%);
+  transition: transform 250ms;
+  padding: 63px 24px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+.overlay:hover .overlay-text {
+  transform: translateY(0);
+}
 .backdrop {
   position: fixed;
   top: 0;
@@ -621,6 +655,7 @@ button:hover {
   bottom: 0;
   left: 0;
   background-color: rgba(122, 121, 121, 0.34);
+  z-index: 4;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -634,6 +669,7 @@ button:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #ffffff;
+  z-index: 5;
 }
 .close-modal-button {
   position: absolute;
@@ -642,7 +678,7 @@ button:hover {
   width: 30px;
   width: 30px;
   border: 1px solid gray;
-  border-radius: 15px;
+  border-radius: 100%;
 }
 .close-modal {
   color: black;
@@ -700,6 +736,10 @@ button:hover {
   height: 120px;
   outline: none;
   padding: 12px 16px;
+  max-width: 448px;
+  max-height: 120px;
+  min-width: 448px;
+  min-height: 120px;
 }
 .modal-label1 {
   display: flex;
