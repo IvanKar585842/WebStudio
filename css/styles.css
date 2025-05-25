@@ -678,11 +678,13 @@ button:hover {
   width: 30px;
   width: 30px;
   border: 1px solid gray;
-  border-radius: 100%;
+  border-radius: 50%;
+    width: 28px;
+  height: 28px;
 }
 .close-modal {
   color: black;
-  padding: 8, 5px;
+  padding: 8,5px;
 }
 .close-modal-button:hover {
   background-color: #ffffff;
