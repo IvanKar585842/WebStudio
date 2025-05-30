@@ -56,6 +56,11 @@ body {
   margin-bottom: 8px;
   position: relative;
 }
+.nav1-menu-link::after{
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .nav1-menu-link:hover::after {
   content: "";
   display: block;
@@ -67,6 +72,9 @@ body {
 }
 a {
   color: black;
+  transition-property: color;
+  transition-duration: 250ms ;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 a:hover {
   color: var(--hover-color);
@@ -88,15 +96,16 @@ a:hover {
 .header1-mail:hover {
   color: #2196f3;
 }
-.tel-icon {
+.header1-tel .tel-icon {
   fill: #757575;
 }
+.header1-mail .mail-icon {
+  fill: #757575; 
+ } 
 .header1-tel:hover .tel-icon {
   fill: #2196f3;
 }
-.mail-icon {
-  fill: #757575;
-}
+
 .header1-mail:hover .mail-icon {
   fill: #2196f3;
 }
@@ -311,11 +320,15 @@ height: 368px; */
 .team-media {
   fill: #afb1b8;
   padding: 12px;
+   border-radius: 50%;
+   transition-property: background-color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-media:hover {
   fill: #ffffff;
   background-color: #2196f3;
-  border-radius: 22px;
+ 
 }
 .svg-team-list {
   display: flex;
@@ -340,6 +353,9 @@ height: 368px; */
   border-radius: 4px;
   width: 170px;
   height: 92px;
+     transition-property: border;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg-client:hover {
   border: 1.5px solid #2196f3;
@@ -356,6 +372,9 @@ height: 368px; */
 }
 .group-icon {
   fill: #afb1b8;
+     transition-property: fill;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .group-icon:hover {
   fill: #2196f3;
@@ -511,6 +530,11 @@ height: 368px; */
 }
 .section-title {
   display: none;
+}
+button{
+     transition-property: background-color,color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 button:hover {
   color: var(--secondary-text-color);
