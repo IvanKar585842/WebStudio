@@ -13,3 +13,21 @@
     document.body.classList.toggle("no-scroll");
   }
 })();
+    const sections = document.querySelectorAll(".section");
+
+    function checkVisibility() {
+      const triggerBottom = window.innerHeight * 0.50;
+
+      sections.forEach((section) => {
+        const boxTop = section.getBoundingClientRect().top;
+
+        if (boxTop < triggerBottom) {
+          section.classList.add("visible");
+        } else {
+          section.classList.remove("visible");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", checkVisibility);
+    window.addEventListener("load", checkVisibility);
