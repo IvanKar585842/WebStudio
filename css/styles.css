@@ -15,16 +15,15 @@ body {
   font-family: var(--font-family);
   scroll-behavior: smooth;
 }
-.logo {
-  font-family: var(--second-family);
-  font-weight: 700;
-  font-size: 26px;
-  letter-spacing: 0.03em;
-  width: 145px;
-  height: 31px;
-  margin-right: 94px;
+a {
+  color: black;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+a:hover {
+  color: var(--hover-color);
+}
 .container {
   width: 1200px;
   margin-left: auto;
@@ -47,6 +46,15 @@ body {
   top: 0;
   right: 0;
   left: 0;
+}
+.logo {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  width: 145px;
+  height: 31px;
+  margin-right: 94px;
 }
 .header-container {
   display: flex;
@@ -81,15 +89,6 @@ body {
   background-color: #2196f3;
   position: absolute;
   top: 45px;
-}
-a {
-  color: black;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-a:hover {
-  color: var(--hover-color);
 }
 .header1-menu-item {
   font-weight: 500;
@@ -174,9 +173,9 @@ a:hover {
   transform: translateY(50px);
   transition: all 0.8s ease;
 }
-.section.visible{
-      opacity: 1;
-      transform: translateY(0);
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 .section2-container {
   padding-top: 94px;
@@ -278,17 +277,16 @@ a:hover {
  margin-bottom: 30px;
 } */
 .section {
-
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.8s ease;
 }
-.section.visible{
-      opacity: 1;
-      transform: translateY(0);
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
-.section3-container{
-    align-items: center;
+.section3-container {
+  align-items: center;
   padding-bottom: 94px;
 }
 .section3-title {
@@ -310,7 +308,6 @@ a:hover {
 }
 .section3-h {
   position: absolute;
-  /* top: 1435px; */
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 14px;
@@ -325,24 +322,21 @@ a:hover {
   z-index: 2;
 }
 .section {
-
-    opacity: 0;
+  opacity: 0;
   transform: translateY(50px);
   transition: all 0.8s ease;
-
 }
-.section.visible{
-      opacity: 1;
-      transform: translateY(0);
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
-.section:nth-child(4){
+.section:nth-child(4) {
   background-color: var(--light-bg-color);
 }
-.section4-container{
-    padding-top: 94px;
+.section4-container {
+  padding-top: 94px;
   padding-bottom: 94px;
   align-items: center;
-    
 }
 .section4-title {
   font-weight: 700;
@@ -357,8 +351,6 @@ a:hover {
   column-gap: 30px;
 }
 .section4-menu-item {
-  /* width: 270px;
-height: 368px; */
   background-color: white;
   box-shadow: 0px 1px 1px rgb(72, 72, 72);
   border-radius: 2px;
@@ -387,11 +379,11 @@ height: 368px; */
 .team-media {
   fill: #afb1b8;
   padding: 12px;
+  position: relative;
 }
 .team-media:hover {
   fill: #ffffff;
-  background-color: #2196f3;
-  border-radius: 50%;
+  background-color: #ffffff00;
 }
 .svg-team-list {
   display: flex;
@@ -400,8 +392,15 @@ height: 368px; */
   margin-bottom: 30px;
   column-gap: 10px;
 }
+.svg-team{
+    width: 44px;
+  height: 44px;
+  position: relative;
+  border-radius: 50%;
+}
 .svg-team:hover {
   fill: #ffffff;
+  background-color: #2196f3;
 }
 .svg-client-list {
   display: flex;
@@ -424,12 +423,12 @@ height: 368px; */
   border: 1.5px solid #2196f3;
   fill: #2196f3;
 }
-.section.visible{
-      opacity: 1;
-      transform: translateY(0);
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
-.section{
-    opacity: 0;
+.section {
+  opacity: 0;
   transform: translateY(50px);
   transition: all 0.8s ease;
 }
@@ -600,6 +599,29 @@ height: 368px; */
   height: 50px;
   padding: 15px;
   margin-top: 20px;
+
+}
+.team-media1 {
+  fill: #ffffff;
+  background-color: #3a3a3a00;
+  position: relative;
+  padding: 12px;
+}
+.team-media1:hover {
+  fill: #ffffff;
+
+}
+.svg-team1{
+    width: 44px;
+  height: 44px;
+  position: relative;
+  border-radius: 50%;
+  background-color: #444548;
+  
+}
+.svg-team1:hover {
+  fill: #ffffff;
+  background-color: #2196f3;
 }
 /* Портфоліо */
 .section6 {
@@ -720,16 +742,7 @@ button:hover {
   margin-left: 24px;
   margin-bottom: 20px;
 }
-.team-media1 {
-  fill: #ffffff;
-  background-color: #3a3a3a;
-  border-radius: 24px;
-  padding: 12px;
-}
-.team-media1:hover {
-  fill: #ffffff;
-  background-color: #2196f3;
-}
+
 .overlay {
   position: relative;
   overflow: hidden;
