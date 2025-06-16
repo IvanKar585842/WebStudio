@@ -307,7 +307,7 @@ a:hover {
   background: url("path_to_image");
 }
 .section3-h {
-  position: absolute;
+  position: relative;
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 14px;
@@ -808,6 +808,9 @@ button:hover {
 .close-modal {
   color: black;
   padding: 8, 5px;
+}
+.close-modal:hover{
+  fill: #2196f3;
 }
 .close-modal-button:hover {
   background-color: #ffffff;
